@@ -4,6 +4,7 @@ database_nifti/
 
 # Model checkpoints
 *.ckpt
+*.pt
 *.pth
 results/checkpoints/
 
