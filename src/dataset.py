@@ -21,7 +21,7 @@ import nibabel as nib
 # ══════════════════════════════════════════════════════════════
 
 def get_train_transforms():
-    """Affine augmentation only — flips, scale, translate, rotate."""
+    """Affine augmentation only : flips, scale, translate, rotate."""
     return A.Compose([
         A.HorizontalFlip(p=0.5),
         A.Affine(
