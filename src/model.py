@@ -13,10 +13,7 @@ import segmentation_models_pytorch as smp
 
 class DeepSupSMPUNet(nn.Module):
     """
-    SMP UNet with:
-    - Pretrained ResNet34 encoder (ImageNet)
-    - SCSE decoder attention (channel + spatial squeeze-excitation)
-    - Deep supervision via auxiliary heads on intermediate decoder outputs
+    U-Net with pretrained ResNet34, SCSE attention, and deep supervision.
 
     Training:  returns (main_output, [aux_1, aux_2, aux_3, aux_4])
     Inference: returns main_output only
